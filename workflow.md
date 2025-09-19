@@ -12,3 +12,7 @@ My project management plan for this challenge:
 - final fixes
 
 - And submit the solution!
+
+Things I should look up:
+
+- the correct way to adjusts font size (accessibility ways)
