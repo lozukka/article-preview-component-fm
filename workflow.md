@@ -24,3 +24,7 @@ Things I should look up:
 --16px: 1rem;
 }
 ```
+
+Where I left:
+
+- doing the share-section positioning.

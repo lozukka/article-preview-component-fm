@@ -87,6 +87,9 @@ a {
     border-radius: var(--13px) 0 0 var(--13px);
   }
 }
+#desktop-flex {
+  position: relative;
+}
 @media screen and (min-width: 90rem) {
   #desktop-flex {
     width: 60%;
@@ -123,6 +126,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 @media screen and (min-width: 90rem) {
   #writer {
@@ -153,13 +157,15 @@ a {
 }
 /*-------share-section----------*/
 #share-section {
-  display: none;
+  display: flex;
   background: var(--very-dark-grayish-blue);
   border-radius: 0 0 var(--13px) var(--13px);
   max-width: var(--350px);
   padding: var(--24px) var(--32px);
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  bottom: 0;
   z-index: 99;
 }
 @media screen and (min-width: 90rem) {
