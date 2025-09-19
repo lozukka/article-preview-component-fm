@@ -16,3 +16,11 @@ My project management plan for this challenge:
 Things I should look up:
 
 - the correct way to adjusts font size (accessibility ways)
+  -> I can use variables. I can name the variables by px.:
+
+```
+:root{
+--13px: 0.813rem;
+--16px: 1rem;
+}
+```

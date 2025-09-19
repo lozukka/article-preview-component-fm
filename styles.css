@@ -25,6 +25,15 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  --13px: 0.813rem;
+  --16px: 1rem;
+  --24px: 1.5rem;
+  --32px: 2rem;
+  --80px: 5rem;
+  --300px: 18.75rem;
+  --350px: 21.875rem;
+  --650px: 40.625rem;
+  --1440px: 90rem;
 }
 
 body {
@@ -36,7 +45,113 @@ body {
   background: var(--light-grayish-blue);
 }
 main {
-  max-width: 350px;
-  margin: auto;
+  max-width: var(--350px);
+  margin: var(--80px) auto var(--32px) auto;
   background: white;
+  border-radius: var(--13px);
+  box-shadow: 10px 8px 24px -8px rgba(72, 85, 106, 0.68);
+  -webkit-box-shadow: 10px 8px 24px -8px rgba(72, 85, 106, 0.68);
+  -moz-box-shadow: 10px 8px 24px -8px rgba(72, 85, 106, 0.68);
+}
+@media screen and (min-width: 90rem) {
+  main {
+    max-width: 1000px;
+    display: flex;
+    margin-top: 6.25rem;
+    align-items: stretch;
+  }
+}
+h1,
+h2 {
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  margin-block: 0;
+}
+p,
+a {
+  color: var(--desaturated-dark-blue);
+  font-weight: 500;
+}
+#feature-image {
+  background-image: url(./images/drawers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 12.5rem;
+  width: 100%;
+  border-radius: var(--13px) var(--13px) 0 0;
+}
+@media screen and (min-width: 90rem) {
+  #feature-image {
+    width: 40%;
+    border-radius: var(--13px) 0 0 var(--13px);
+  }
+}
+@media screen and (min-width: 90rem) {
+  #desktop-flex {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+#article-exerpt {
+  padding: var(--32px);
+}
+#article-exerpt h1 {
+  font-size: 1.1rem;
+  margin-bottom: var(--16px);
+}
+@media screen and (min-width: 90rem) {
+  #article-exerpt h1 {
+    font-size: var(--24px);
+  }
+}
+#article-exerpt p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+@media screen and (min-width: 90rem) {
+  #article-exerpt p {
+    font-size: var(--16px);
+    margin-top: var(--16px);
+  }
+}
+#writer {
+  padding: var(--32px);
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (min-width: 90rem) {
+  #writer {
+    margin-bottom: 0;
+  }
+}
+#profile-pic {
+  border-radius: 50%;
+  width: var(--32px);
+  height: var(--32px);
+  margin-right: var(--16px);
+}
+#writer-info h2 {
+  font-size: var(--13px);
+}
+#writer-info p {
+  font-size: var(--13px);
+}
+#writer a {
+  margin-left: auto;
+  background: var(--light-grayish-blue);
+  width: var(--32px);
+  height: var(--32px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 0.5rem;
 }
