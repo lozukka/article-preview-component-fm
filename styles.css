@@ -118,10 +118,9 @@ a {
   }
 }
 #writer {
-  display: none;
   padding: var(--32px);
   padding-top: 0;
-  /*display: flex;*/
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -161,6 +160,12 @@ a {
   padding: var(--24px) var(--32px);
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 90rem) {
+  #share-section {
+    border-radius: var(--13px);
+    padding: var(--13px) var(--24px);
+  }
 }
 #share-section h3 {
   color: var(--grayish-blue);
