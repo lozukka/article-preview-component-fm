@@ -153,13 +153,14 @@ a {
 }
 /*-------share-section----------*/
 #share-section {
+  display: none;
   background: var(--very-dark-grayish-blue);
   border-radius: 0 0 var(--13px) var(--13px);
   max-width: var(--350px);
-  display: flex;
   padding: var(--24px) var(--32px);
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 @media screen and (min-width: 90rem) {
   #share-section {
