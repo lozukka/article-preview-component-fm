@@ -157,7 +157,7 @@ a {
 }
 /*-------share-section----------*/
 #share-section {
-  display: none;
+  display: flex;
   background: var(--very-dark-grayish-blue);
   border-radius: 0 0 var(--13px) var(--13px);
   width: var(--350px);
@@ -165,16 +165,26 @@ a {
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  right: -100%;
   bottom: 0;
+  z-index: -10;
+  opacity: 0;
+  transition: right 300ms ease-out;
+}
+#share-section.show {
   z-index: 99;
+  opacity: 1;
+  right: 0;
 }
 @media screen and (min-width: 90rem) {
   #share-section {
     border-radius: var(--13px);
     padding: var(--13px) var(--24px);
     width: var(--300px);
-    right: -80px;
     bottom: var(--80px);
+  }
+  #share-section.show {
+    right: -80px;
   }
 }
 #share-section h3 {

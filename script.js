@@ -4,9 +4,9 @@ let shareSection = document.getElementById("share-section");
 let writerSection = document.getElementById("writer");
 
 shareOpen.addEventListener("click", (event) => {
-  shareSection.style.display = "flex";
+  shareSection.classList.add("show");
 });
 
 shareClose.addEventListener("click", (event) => {
-  shareSection.style.display = "none";
+  shareSection.classList.remove("show");
 });
