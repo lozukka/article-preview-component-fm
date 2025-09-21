@@ -160,7 +160,7 @@ a {
   display: flex;
   background: var(--very-dark-grayish-blue);
   border-radius: 0 0 var(--13px) var(--13px);
-  max-width: var(--350px);
+  width: var(--350px);
   padding: var(--24px) var(--32px);
   justify-content: space-between;
   align-items: center;
@@ -172,6 +172,9 @@ a {
   #share-section {
     border-radius: var(--13px);
     padding: var(--13px) var(--24px);
+    width: var(--300px);
+    right: -80px;
+    bottom: var(--80px);
   }
 }
 #share-section h3 {
