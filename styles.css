@@ -155,6 +155,14 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 90rem) {
+  #share-open.show {
+    background-color: var(--desaturated-dark-blue);
+  }
+  #share-open.show svg path {
+    fill: #fff;
+  }
+}
 /*-------share-section----------*/
 #share-section {
   display: flex;
@@ -180,7 +188,7 @@ a {
   #share-section {
     border-radius: var(--13px);
     padding: var(--13px) var(--24px);
-    width: var(--300px);
+    width: 240px;
     bottom: var(--80px);
   }
   #share-section.show {
@@ -210,6 +218,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#share-close path {
+  fill: #fff;
+}
+@media screen and (min-width: 90rem) {
+  #share-close {
+    display: none;
+  }
 }
 /*-------footer----------*/
 footer p {
