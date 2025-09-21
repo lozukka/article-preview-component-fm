@@ -157,7 +157,7 @@ a {
 }
 /*-------share-section----------*/
 #share-section {
-  display: flex;
+  display: none;
   background: var(--very-dark-grayish-blue);
   border-radius: 0 0 var(--13px) var(--13px);
   width: var(--350px);

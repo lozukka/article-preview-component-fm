@@ -5,10 +5,8 @@ let writerSection = document.getElementById("writer");
 
 shareOpen.addEventListener("click", (event) => {
   shareSection.style.display = "flex";
-  writerSection.style.display = "none";
 });
 
 shareClose.addEventListener("click", (event) => {
   shareSection.style.display = "none";
-  writerSection.style.display = "flex";
 });
